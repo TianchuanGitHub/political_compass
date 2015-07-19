@@ -1,0 +1,1763 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>大学生政治坐标可视化</title> 
+    <script type="text/javascript" src="http://www.newsontheroad.com/political_compass/javascript/answers.js"></script>
+    <script type="text/javascript" src="http://www.newsontheroad.com/political_compass/javascript/questions.js"></script>
+<link rel="stylesheet" type="text/css" href="http://www.newsontheroad.com/political_compass/css/political_compass.css" />
+</head>
+<body>
+    <div class="container">
+    <div class="pagetext"><p class="text">经济领域的结果令人惊讶，多数大学生认为“改革开放以来的经济成果只被少数人享有”，同时对国企体制表现出热情，超过四分之三的人认为“关系到国家安全、国计民生的领域必须全部由国有企业掌控”，超过一半的人认同“国有企业的利益属于国家利益。</p></div>
+    <div id="0" class="charts"></div>
+    <div id="1" class="charts"></div>
+    <div id="2" class="charts"></div>
+    <div id="3" class="charts"></div>
+    <div id="4" class="charts"></div>
+    <div id="5" class="charts"></div>
+    <div id="6" class="charts"></div>
+    <div id="7" class="charts"></div>
+    <div id="8" class="charts"></div>
+    <div id="9" class="charts"></div>
+    <div id="10"class="charts"></div>
+    <div id="11"class="charts"></div>
+    <div id="12"class="charts"></div>
+    <div id="13"class="charts"></div>
+    <div id="14"class="charts"></div>
+    <div id="15"class="charts"></div>
+    <div id="16"class="charts"></div>
+    <div id="17"class="charts"></div>
+    <div id="18"class="charts"></div>
+    <div id="19"class="charts"></div>
+    </div>
+    <a href="www.newsontheroad.com/political-compass/pages/menu.html"><div class="button-left">
+    <p >目录</p>
+    </div></a>
+    <a href="http://www.newsontheroad.com/political_compass/pages/culture.html"><div class="button-right">
+    <p >文化</p>
+    </div></a>
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script type="text/javascript">
+          require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+        require(
+            [
+                'echarts',
+                'echarts/chart/pie',
+            ],
+        function (ec) {
+          var myChart = ec.init(document.getElementById('0'));
+          var i = 20;
+          var option0 = {
+
+                  tooltip: {
+                  show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+                          };
+          i++;
+          myChart.setOption(option0); 
+          var myChart1=ec.init(document.getElementById('1'));
+            var option1 = {
+                             tooltip: {
+                                 show: false
+                             },
+                             toolbox: {
+                                 show: false,
+                                 feature: {
+                                     dataView: {
+                                         readOnly: true
+                                     }
+                                 }
+                             },
+                             calculable: false,
+                             series: [
+                                 {
+                                     name: "",
+                                     type: "pie",
+                                     radius: ["50%", "70%"],
+                                     itemStyle: {
+                                         normal: {
+                                             label: {
+                                                 show: false
+                                             },
+                                             labelLine: {
+                                                 show: false
+                                             }
+                                         },
+                                         emphasis: {
+                                             label: {
+                                                 show: true,
+                                                 position: "center",
+                                                 textStyle: {
+                                                     fontSize: "38",
+                                                     fontWeight: "bold"
+                                                 }
+                                             },
+                                             color: "rgb(102, 102, 102)",
+                                             borderWidth: 0,
+                                             borderColor: "rgb(229, 229, 229)"
+                                         }
+                                     },
+                                     data: [
+                                         {
+                                             value: strongly_against[i],
+                                             name: "强烈反对"
+                                         },
+                                         {
+                                             value: against[i],
+                                             name: "反对"
+                                         },
+                                         {
+                                             value: approve[i],
+                                             name: "同意"
+                                         },
+                                         {
+                                             value: strongly_approve[i],
+                                             name: "强烈同意"
+                                         }
+                                     ],
+                                     tooltip: {
+                                         show: false
+                                     },
+                                     startAngle: 0
+                                 }
+                                 
+                             ],
+                             color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                             title: {
+                                 text: questions[i],
+                                 subtext: "",
+                                 y: "top",
+                                 x: "center",
+                                 textStyle: {
+                                     fontStyle: "normal",
+                                     fontWeight: "bold",
+                                     fontSize: 20,
+                                 }
+                             },
+                             backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                      };
+            i++;
+          myChart1.setOption(option1);
+          var myChart2=ec.init(document.getElementById('2'));
+            var option2 = {
+                             tooltip: {
+                                 show: false
+                             },
+                             toolbox: {
+                                 show: false,
+                                 feature: {
+                                     dataView: {
+                                         readOnly: true
+                                     }
+                                 }
+                             },
+                             calculable: false,
+                             series: [
+                                 {
+                                     name: "",
+                                     type: "pie",
+                                     radius: ["50%", "70%"],
+                                     itemStyle: {
+                                         normal: {
+                                             label: {
+                                                 show: false
+                                             },
+                                             labelLine: {
+                                                 show: false
+                                             }
+                                         },
+                                         emphasis: {
+                                             label: {
+                                                 show: true,
+                                                 position: "center",
+                                                 textStyle: {
+                                                     fontSize: "38",
+                                                     fontWeight: "bold"
+                                                 }
+                                             },
+                                             color: "rgb(102, 102, 102)",
+                                             borderWidth: 0,
+                                             borderColor: "rgb(229, 229, 229)"
+                                         }
+                                     },
+                                     data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+                                     ],
+                                     tooltip: {
+                                         show: false
+                                     },
+                                     startAngle: 0
+                                 }
+                                 
+                             ],
+                             color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                             title: {
+                                 text: questions[i],
+                                 subtext: "",
+                                 y: "top",
+                                 x: "center",
+                                 textStyle: {
+                                     fontStyle: "normal",
+                                     fontWeight: "bold",
+                                     fontSize: 20,
+                                 }
+                             },
+                             backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                      };
+            i++;
+          myChart2.setOption(option2);
+          var myChart3=ec.init(document.getElementById('3'));
+          var option3 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                        {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",
+               animation: false
+
+                                    };
+          i++;
+          myChart3.setOption(option3);
+          var myChart4=ec.init(document.getElementById('4'));
+          var option4 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       }
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart4.setOption(option4);
+          var myChart5=ec.init(document.getElementById('5'));
+          var option5 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart5.setOption(option5);
+          var myChart6=ec.init(document.getElementById('6'));
+          var option6 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart6.setOption(option6);
+          var myChart7=ec.init(document.getElementById('7'));
+          var option7 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       }
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart7.setOption(option7);
+          var myChart8=ec.init(document.getElementById('8'));
+          var option8 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart8.setOption(option8);
+          var myChart9=ec.init(document.getElementById('9'));
+          var option9 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       }
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart9.setOption(option9);
+          var myChart10=ec.init(document.getElementById('10'));
+          var option10 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart10.setOption(option10);
+          var myChart11=ec.init(document.getElementById('11'));
+          var option11 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart11.setOption(option11);
+          var myChart12=ec.init(document.getElementById('12'));
+          var option12 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       }
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart12.setOption(option12);
+          var myChart13=ec.init(document.getElementById('13'));
+          var option13 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart13.setOption(option13);
+          var myChart14=ec.init(document.getElementById('14'));
+          var option14 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       }
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart14.setOption(option14);
+          var myChart15=ec.init(document.getElementById('15'));
+          var option15 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       }
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart15.setOption(option15);
+          var myChart16=ec.init(document.getElementById('16'));
+          var option16 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart16.setOption(option16);
+          var myChart17=ec.init(document.getElementById('17'));
+          var option17 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart17.setOption(option17);
+          var myChart18=ec.init(document.getElementById('18'));
+          var option18 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",animation: false
+
+                                    };
+          i++;
+          myChart18.setOption(option18);
+          var myChart19=ec.init(document.getElementById('19'));
+          var option19 = {
+                           tooltip: {
+                               show: false
+                           },
+                           toolbox: {
+                               show: false,
+                               feature: {
+                                   dataView: {
+                                       readOnly: true
+                                   }
+                               }
+                           },
+                           calculable: false,
+                           series: [
+                               {
+                                   name: "",
+                                   type: "pie",
+                                   radius: ["50%", "70%"],
+                                   itemStyle: {
+                                       normal: {
+                                           label: {
+                                               show: false
+                                           },
+                                           labelLine: {
+                                               show: false
+                                           }
+                                       },
+                                       emphasis: {
+                                           label: {
+                                               show: true,
+                                               position: "center",
+                                               textStyle: {
+                                                   fontSize: "38",
+                                                   fontWeight: "bold"
+                                               }
+                                           },
+                                           color: "rgb(102, 102, 102)",
+                                           borderWidth: 0,
+                                           borderColor: "rgb(229, 229, 229)"
+                                       }
+                                   },
+                                   data: [
+                                       {
+                                           value: strongly_approve[i],
+                                           name: "强烈同意"
+                                       },
+                                       {
+                                           value: approve[i],
+                                           name: "同意"
+                                       },
+                                       {
+                                           value: against[i],
+                                           name: "反对"
+                                       },
+                                       {
+                                           value: strongly_against[i],
+                                           name: "强烈反对"
+                                       },
+                                   ],
+                                   tooltip: {
+                                       show: false
+                                   },
+                                   startAngle: 0
+                               }
+                               
+                           ],
+                           color: ["rgb(0, 127, 255)", "rgb(86, 170, 255)", "rgb(255, 86, 86)", "rgb(255, 0, 0)"],
+                           title: {
+                               text: questions[i],
+                               subtext: "",
+                               y: "top",
+                               x: "center",
+                               textStyle: {
+                                   fontStyle: "normal",
+                                   fontWeight: "bold",
+                                   fontSize: 20,
+                               }
+                           },
+                           backgroundColor: "rgb(229, 229, 229)",
+                           animation: false
+
+                                    };
+          i++;
+          myChart19.setOption(option19);
+            window.onresize = function() {
+            myChart.resize();
+            myChart1.resize();
+            myChart2.resize();
+            myChart3.resize();
+            myChart4.resize();
+            myChart5.resize();
+            myChart6.resize();
+            myChart7.resize();
+            myChart8.resize();
+            myChart9.resize();
+            myChart10.resize();
+            myChart11.resize();
+            myChart12.resize();
+            myChart13.resize();
+            myChart14.resize();
+            myChart15.resize();
+            myChart16.resize();
+            myChart17.resize();
+            myChart18.resize();
+            myChart19.resize();
+            };
+    }
+    )    
+    </script>
+</body>

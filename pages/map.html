@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>意识形态地图</title> 
+    <script type="text/javascript" src="http://www.newsontheroad.com/political_compass/javascript/answers.js"></script>
+    <script type="text/javascript" src="http://www.newsontheroad.com/political_compass/javascript/questions.js"></script>
+    <link rel="stylesheet" type="text/css" href="http://www.newsontheroad.com/political_compass/css/political_compass.css" />
+</head>
+<body>
+<div class="container">
+    <div id="map" class="charts"></div>
+    </div>
+    <!-- 页末导航部分 -->
+     <div class="footer"><a href="http://www.newsontheroad.com/political_compass/pages/menu.html"><p class="button-text">目录</p></div></a>
+
+    <!-- 页末导航部分 -->
+    <script src="http://echarts.baidu.com/build/dist/echarts.js"></script>
+    <script type="text/javascript">
+        require.config({
+            paths: {
+                echarts: 'http://echarts.baidu.com/build/dist'
+            }
+        });
+        require(
+            [
+                'echarts',
+                'echarts/chart/map',
+            ],
+
+        function (ec) {
+          var myChart = ec.init(document.getElementById('map'));
+          var option = {
+									   title: {
+									       text: "",
+									       subtext: "左右拖动筛选省份",
+									       x: "center"
+									   },
+									   tooltip: {
+										   trigger: "item",
+										   show:false
+										   },
+										   
+									   dataRange: {
+									       min: 0,
+									       max: 29,
+										   orient:'horizontal',
+									       x: "center",
+									       y: "top",
+									       text: ["保守", "自由"],
+									       calculable: true,
+									       color: ["rgb(255, 0, 0)", "rgb(0, 29, 255)"],
+									       itemWidth: 17,
+									       hoverLink:false,
+									       splitNumber:29,
+									   },
+									   toolbox: {
+									       orient: "vertical",
+									       x: "right",
+									       y: "bottom",
+									       feature: {
+									           mark: {
+									               show: false
+									           },
+									           dataView: {
+									               show: false,
+									               readOnly: false
+									           },
+									           restore: {
+									               show: false
+									           },
+									           saveAsImage: {
+									               show: false
+									           }
+									       }
+									   },
+									   roamController: {
+									       show: false,
+									       x: "right",
+									       mapTypeControl: {
+									           china: false
+									       }
+									   },
+									   series: [
+									       {
+									           name: "保守度",
+									           type: "map",
+									           mapType: "china",
+									           roam: false,
+											   hoverable:true,
+									           mapValueCalculation: "sum",
+									           itemStyle: {
+									               emphasis: {
+									                   label: {
+									                       show: false
+									                   }
+									               }
+									           },
+									           data: [
+									               {
+									                   value: 4,
+									                   name: "北京"
+									               },
+									               {
+									                   value: 14,
+									                   name: "天津"
+									               },
+									               {
+									                   value: 1,
+									                   name: "上海"
+									               },
+									               {
+									                   value: 12,
+									                   name: "重庆"
+									               },
+									               {
+									                   value: 16,
+									                   name: "河北"
+									               },
+									               {
+									                   value: 26,
+									                   name: "河南"
+									               },
+									               {
+									                   value: 11,
+									                   name: "云南"
+									               },
+									               {
+									                   value: 9,
+									                   name: "辽宁"
+									               },
+									               {
+									                   value: 21,
+									                   name: "黑龙江"
+									               },
+									               {
+									                   value: 24,
+									                   name: "湖南"
+									               },
+									               {
+									                   value: 22,
+									                   name: "安徽"
+									               },
+									               {
+									                   value: 17,
+									                   name: "山东"
+									               },
+									               {
+									                   value: 29,
+									                   name: "新疆"
+									               },
+									               {
+									                   value: 6,
+									                   name: "江苏"
+									               },
+									               {
+									                   value: 3,
+									                   name: "浙江"
+									               },
+									               {
+									                   value: 23,
+									                   name: "江西"
+									               },
+									               {
+									                   value: 10,
+									                   name: "湖北"
+									               },
+									               {
+									                   value: 27,
+									                   name: "广西"
+									               },
+									               {
+									                   value: 20,
+									                   name: "甘肃"
+									               },
+									               {
+									                   value: 8,
+									                   name: "山西"
+									               },
+									               {
+									                   value: 25,
+									                   name: "内蒙古"
+									               },
+									               {
+									                   value: 18,
+									                   name: "陕西"
+									               },
+									               {
+									                   value: 15,
+									                   name: "吉林"
+									               },
+									               {
+									                   value: 5,
+									                   name: "福建"
+									               },
+									               {
+									                   value: 28,
+									                   name: "贵州"
+									               },
+									               {
+									                   value: 2,
+									                   name: "广东"
+									               },
+									               {
+									                   value: 13,
+									                   name: "四川"
+									               },
+									               {
+									                   value: 19,
+									                   name: "宁夏"
+									               },
+									               {
+									                   value: 7,
+									                   name: "海南"
+									               },
+									               {
+									                   value: 0,
+									                   name: "香港"
+									               }
+									           ]
+									       }
+									   ],
+									   backgroundColor: "rgb(229, 229, 229)"
+									}
+          myChart.setOption(option); 
+            window.onresize = function() {
+            myChart.resize();
+
+            };
+		}
+		)
+
+    </script>
+
+</body>
