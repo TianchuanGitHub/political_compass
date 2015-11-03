@@ -2,12 +2,12 @@
 
 This project is based on
 
-1. Data from the Chinese Political Compass test:
+Data from the Chinese Political Compass test:
 
-http://zuobiao.me/
+    http://zuobiao.me/
 
-2. China's Ideological Spectrum  by Jennifer Pan, Harvard University Yiqing Xu, MIT 
+China's Ideological Spectrum  by Jennifer Pan, Harvard University Yiqing Xu, MIT 
 
-http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2593377
+    http://papers.ssrn.com/sol3/papers.cfm?abstract_id=2593377
 
 
