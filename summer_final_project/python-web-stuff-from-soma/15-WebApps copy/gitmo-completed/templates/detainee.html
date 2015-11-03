@@ -1,0 +1,8 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h1>{{ detainee.name.title() }}</h1>
+  <p><strong>Nationality:</strong> <a href="{{ url_for('.show_country', abbreviation=detainee.country.iso) }}">{{ detainee.country.name }}</a></p>
+  <p><strong>Detained since:</strong> {{ detainee.arrival_date }}</p>
+  <p><strong>Transfer reason:</strong> {{ detainee.transfer_reason }}</p>
+  <p><strong>Capture details:</strong> {{ detainee.capture_details }}</p>
+{% endblock %}

@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h1>Detainee Country List</h1>
+
+  <p>Only a few countries</p>
+
+  {% for country in countries %}
+    <p><a href="{{ url_for('.show_country', abbreviation=country.iso) }}">{{ country.name }}</a></p>
+  {% endfor %}
+{% endblock %}

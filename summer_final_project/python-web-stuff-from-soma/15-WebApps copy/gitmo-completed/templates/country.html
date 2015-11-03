@@ -1,0 +1,10 @@
+{% extends "layout.html" %}
+{% block content %}
+  <h1>Detainees from {{ country.name }}</h1>
+
+  <p>There are {{ country.detainees.count() }} detainees from {{ country.name }}</p>
+
+  {% for detainee in country.detainees %}
+    <p><a href="{{ url_for('.show_detainee', isn=detainee.isn) }}">{{ detainee.name.title() }}</a></p>
+  {% endfor %}
+{% endblock %}

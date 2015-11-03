@@ -1,0 +1,18 @@
+#frontpage{background-color:#E5E5E5;margin: 0px;padding: 0px;width: 100%}
+#bodyfrontpage{background-color:#E5E5E5;margin:0px;padding:0px;width: 100%}
+div.charts{height:480px;margin:0px;padding:0px;}
+body{margin:0px;padding:0px;background-color:#E5E5E5;}
+div.map{height:220px;background-color:red;margin:0px;padding:0px;}
+div.navigation{height:100px;background-color:yellow;margin:0px;padding:0px;width: 100%}
+div.button-left{height:100px;width:50%;background-color:#ff5656;margin:0px;padding:0px;float:left;}
+div.button-right{height:100px;width:50%;background-color:#56aaff;margin:0px;padding:0px;float:right;}
+div.footer{height:96px;background-color:#56aaff;margin:0px;padding:0px;position:absolute;bottom: 0;width: 100%}
+div.p{margin:0px;width:95%;padding-left: 10px;}
+div.container{margin:0px;padding:0px;border:0px;width: 100%}
+div.pagetext{height:200px;margin:0px;padding:0px;width:90%}}
+div.menu{height:96px;padding:0px;border:0px;}
+p.botton-text{font-size:60px ;font-family:"SimHei";font-style:bold;text-align:center;color:#E5E5E5;}
+a:link {font-size:30px ;font-family:"SimHei";font-style:bold;text-align:center;color:#E5E5E5;text-decoration:none;}     /* 未访问的链接 */
+a:visited {font-size:30px ;font-family:"SimHei";font-style:bold;text-align:center;color:#666666;text-decoration:none;}  /* 已访问的链接 */
+a:hover {font-size:30px ;font-family:"SimHei";font-style:bold;text-align:center;color:#666666;text-decoration:none;}    /* 当有鼠标悬停在链接上 */
+a:active {font-size:30px ;font-family:"SimHei";font-style:bold;text-align:center;color:#666666;text-decoration:none;}   /* 被选择的链接 */
